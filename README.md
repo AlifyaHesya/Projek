@@ -1,35 +1,34 @@
-Deskripsi
-  Backend yang dibangun merupakan layanan API berbasis RESTful API yang berfungsi sebagai pusat logika bisnis dan pengelolaan data aplikasi. 
+**Deskripsi**: Backend yang dibangun merupakan layanan API berbasis RESTful API yang berfungsi sebagai pusat logika bisnis dan pengelolaan data aplikasi. 
 Sistem ini kami bagi menjadi 5 fitur fungsional utama yaitu menangani proses autentikasi pengguna (login), manajemen data UKT (Uang Kuliah Tunggal),
 manajemen tugas mahasiswa (task), notifikasi, serta menyediakan endpoint untuk administrator. Struktur backend dirancang modular menggunakan konsep MVC (Model–View–Controller)
 agar kode lebih teratur, mudah dipelihara, dan dapat dikembangkan lebih lanjut. Backend juga dilengkapi middleware untuk mengelola autentikasi JWT (JSON Web Token) dan otorisasi berdasarkan role.
 
-Teknologi yang Digunakan
-  a. Bahasa & Runtime
-    •	Node.js:  sebagai environment server.
-    •	JavaScript (ES6): bahasa pemrograman utama.
-  b. Framework & Library
-    •	Express.js: framework utama untuk membuat REST API.
-    •	Sequelize ORM: untuk mengelola database secara lebih mudah (Model, Migration, Relasi).
-    •	bcrypt: untuk hashing password.
-    •	jsonwebtoken (JWT): untuk autentikasi dan otorisasi user secara aman.
-    •	dotenv: untuk menyimpan konfigurasi sensitif seperti key, DB user, password.
-    •	Nodemon: untuk memulai server dengan auto-reload.
-  c. Database
-    •	MySQL: digunakan untuk menyimpan data user, UKT, tugas, dan notifikasi.
-  d. Arsitektur Folder
-    Backend menggunakan struktur modul berikut:
-    src/
-    ─ config/          → Pengaturan database (db.js)
-    ─ controllers/     → Logika proses (Auth, UKT, Task, Admin, Notif)
-    ─ middlewares/     → Middleware auth dan role
-    ─ models/          → Model database (User, Task, UKT, Notification)
-    ─ routes/          → Routing endpoint API
-    ─ server.js        → File utama untuk menjalankan server
-    .env                → Variabel environment
-    package.json        → Dependencies
+**Teknologi yang Digunakan**
+1. Bahasa & Runtime
+   - Node.js:  sebagai environment server.
+   - JavaScript (ES6): bahasa pemrograman utama.
+2. Framework & Library
+   - Express.js: framework utama untuk membuat REST API.
+   - Sequelize ORM: untuk mengelola database secara lebih mudah (Model, Migration, Relasi).
+   - Bcrypt: untuk hashing password.
+   - Jsonwebtoken (JWT): untuk autentikasi dan otorisasi user secara aman.
+   - Dotenv: untuk menyimpan konfigurasi sensitif seperti key, DB user, password.
+   - Nodemon: untuk memulai server dengan auto-reload.
+3. Database
+   - MySQL: digunakan untuk menyimpan data user, UKT, tugas, dan notifikasi.
+4. Arsitektur Folder
+   Backend menggunakan struktur modul berikut:
+> src/
+- config/          → Pengaturan database (db.js)
+- controllers/     → Logika proses (Auth, UKT, Task, Admin, Notif)
+- middlewares/     → Middleware auth dan role
+- models/          → Model database (User, Task, UKT, Notification)
+- routes/          → Routing endpoint API
+- server.js        → File utama untuk menjalankan server
+> .env                → Variabel environment
+> package.json        → Dependencies
 
-Cara menjalankan aplikasi
+**Cara menjalankan aplikasi**
   1. Install dependencies
      Pastikan berada di folder backend: npm install
   2. Buat file .env
@@ -56,7 +55,7 @@ Cara menjalankan aplikasi
   Jika muncul respon seperti: "API is running"
   maka backend siap digunakan.
 
-Bagian yang dibantu Generative AI
+**Bagian yang dibantu Generative AI**
   1. Penyusunan Struktur Folder dan Arsitektur Backend
       Generative AI membantu merekomendasikan struktur direktori backend yang rapi dan standar, termasuk pembagian folder:
       •	controllers/
