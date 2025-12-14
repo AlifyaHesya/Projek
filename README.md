@@ -65,13 +65,14 @@ agar kode lebih teratur, mudah dipelihara, dan dapat dikembangkan lebih lanjut. 
       •	config/
       Saran dari AI memastikan bahwa pola arsitektur yang digunakan mengikuti praktik terbaik (best practice) seperti pola MVC (Model–View–Controller).
 
-  2. Pembuatan Boilerplate Code Express.js
-      AI membantu membuat kode dasar Express seperti:
-      •	Inisialisasi server
-      •	Middleware global
-      •	Pengaturan CORS
-      •	Parsing JSON
-      •	Setup route awal
+2. Pembuatan Boilerplate Code Express.js
+AI membantu membuat kode dasar Express seperti:
+- Inisialisasi server
+- Middleware global
+- Pengaturan CORS
+- Parsing JSON
+- Setup route awal
+
      
       Contoh bagian yang dibantu AI:
       const express = require('express');
@@ -79,7 +80,7 @@ agar kode lebih teratur, mudah dipelihara, dan dapat dikembangkan lebih lanjut. 
       const app = express();
       app.use(cors());
       app.use(express.json());
-
+3. Debugging error kecil seperti gagal parsing JSON
 
 
 
